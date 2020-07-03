@@ -1,4 +1,5 @@
 $roboto-font-path: '../../../fonts' !default;
+$roboto-font-display: auto !default;
 
 @mixin roboto-font($folder, $variant, $type, $weight, $style) {
 
@@ -9,6 +10,7 @@ $roboto-font-path: '../../../fonts' !default;
         src: url('#{$font-full-path}-#{$type}.woff2') format('woff2'),
              url('#{$font-full-path}-#{$type}.woff') format('woff');
         font-weight: $weight;
+        font-display: $roboto-font-display;
         font-style: $style;
     }
 
